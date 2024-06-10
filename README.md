@@ -1,4 +1,4 @@
-![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/c4f08691-19f4-4970-8a4a-ac6a3517584a)Automatic run file by using Window Task Scheduler
+Automatic run file by using Window Task Scheduler
 Tutorial:
     Step 1: Open Task Scheduler
   ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/8fdfa062-e2db-4821-b684-5a09fe9484e2)
