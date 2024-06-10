@@ -24,16 +24,16 @@ namespace BackgroundChanger
             string imageName = "";
             int time = DateTime.Now.Hour;
 
+            if (time > 0)
+                imageName = imgDefault;
             if (time > 6)
                 imageName = imgDay;
             if (time > 18)
                 imageName = imgNight;
             if (time > 22)
                 imageName = imgNightLightOff;
-            else
-                imageName = imgDefault;
 
-
+            Console.WriteLine("Current Hour: " + time);
             String imagePath =  Path.GetFullPath(@".bg\" + imageName);
 
             // Set wallpaper
