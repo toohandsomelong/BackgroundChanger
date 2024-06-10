@@ -24,13 +24,13 @@ namespace BackgroundChanger
             string imageName = "";
             int time = DateTime.Now.Hour;
 
-            if (time > 0)
+            if (time >= 0)
                 imageName = imgDefault;
-            if (time > 6)
+            if (time >= 6)
                 imageName = imgDay;
-            if (time > 18)
+            if (time >= 18)
                 imageName = imgNight;
-            if (time > 22)
+            if (time >= 22)
                 imageName = imgNightLightOff;
 
             Console.WriteLine("Current Hour: " + time);
