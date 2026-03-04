@@ -1,21 +1,53 @@
-Automatic run file by using Window Task Scheduler 
-By follow tutorial below or import BGChange.xml to Task Scheduler
-Tutorial:
-    Step 1: Open Task Scheduler
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/8fdfa062-e2db-4821-b684-5a09fe9484e2)
-    Step 2: Create task
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/6037a054-8344-42e8-8b23-d62fe86e41c1)
-    Step 3: Name it
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/5b530023-1ab2-48f7-a359-902edf2e2085)
-    Step 4: Add new action
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/527224ca-f3af-47a9-b852-704050b9fd86)
-    Step 5: Set action and press OK
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/d530f4f6-0fdd-4788-932d-24aac42a37a1)
-  Example
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/7ab5eb93-ce5c-41df-a316-9ad2974851c5)
-    Step 6: Add new trigger
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/41007a4f-800f-4360-8bd9-55e0358b4195)
-    Step 7: Set trigger and press OK
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/67c3bd8d-ac50-4e42-954a-f2a16f9244cc)
-    Step 8: OK
-  ![image](https://github.com/toohandsomelong/BackgroundChanger/assets/74458457/dab1ee15-8ed6-4b0b-a4bb-480a258775f0)
+# BackgroundChanger
+
+A lightweight Windows system tray app that automatically changes your desktop wallpaper based on the time of day.
+## Features
+
+- Runs silently in the system tray
+- Automatically switches wallpaper every 5 minutes based on time of day
+- Right-click tray icon for quick actions
+
+## Time Schedule
+
+| Time          | Wallpaper File            |
+|---------------|---------------------------|
+| 00:00 - 05:59 | `Default.png`             |
+| 06:00 - 17:59 | `BG.jpg`                  |
+| 18:00 - 21:59 | `BG_Night.jpg`            |
+| 22:00 - 23:59 | `BG_Night_LightOff.jpg`   |
+
+## Getting Started
+
+1. Download the latest release
+2. Create a `.bg` folder next to `BackgroundChanger.exe`
+3. Add your wallpaper images to the `.bg` folder using the filenames above
+4. Run `BackgroundChanger.exe`
+
+### Expected Folder Structure
+
+```
+BackgroundChanger/
+├── BackgroundChanger.exe
+├── icon.ico
+└── .bg/
+    ├── Default.png
+    ├── BG.jpg
+    ├── BG_Night.jpg
+    └── BG_Night_LightOff.jpg
+```
+
+Replace the images with your own wallpapers. Keep the same filenames.
+
+## Tray Menu
+
+Right-click the tray icon to access the menu:
+
+| Option                    | Description                                               |
+|---------------------------|-----------------------------------------------------------|
+| **Change Now**            | Force-apply the wallpaper for the current time bracket    |
+| **Open Images Folder**    | Opens the `.bg` folder in Explorer                        |
+| **Start with Windows**    | Toggle auto-launch on login                               |
+| **Exit**                  | Close the app                                             |
+
+## Requirements
+- Windows 10 / 11
