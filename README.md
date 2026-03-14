@@ -16,13 +16,6 @@ A lightweight Windows system tray app that automatically changes your desktop wa
 | 18:00 - 21:59 | `BG_Night.jpg`            |
 | 22:00 - 23:59 | `BG_Night_LightOff.jpg`   |
 
-## Getting Started
-
-1. Download the latest release
-2. Create a `.bg` folder next to `BackgroundChanger.exe`
-3. Add your wallpaper images to the `.bg` folder using the filenames above
-4. Run `BackgroundChanger.exe`
-
 ### Expected Folder Structure
 
 ```
